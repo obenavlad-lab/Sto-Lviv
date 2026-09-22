@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СТО24 Львів / Автосервіс у Львові</title>
+  <meta name="description" content="Автосервіс СТО24 Львів у Львові: гальма, підвіска, діагностика, планове ТО. Прозорі ціни, гарантія на роботи. Запис телефоном.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="curtain" aria-hidden="true"><div class="curtain__mark">СТО24 Львів</div></div>
+
+<!-- Шапка: логотип, адреса й години, меню, телефон, кнопка в одну лінію -->
+<header class="header">
+  <a class="header__logo" href="index.html">СТО24 Львів</a>
+  <div class="header__meta">
+    <span>вул. Личаківська, 150, Львів, Львівська обл., 79010</span>
+    <span>Пн–Нд 10:00–21:00</span>
+  </div>
+  <nav class="header__nav" id="main-nav" aria-label="Основна навігація">
+    <a class="pill" href="#services">Послуги</a>
+    <a class="pill" href="#about">Про нас</a>
+    <a class="pill" href="#how">Як працюємо</a>
+    <a class="pill" href="#prices">Ціни</a>
+    <a class="pill" href="#faq">Питання</a>
+    <a class="pill" href="#contacts">Контакти</a>
+  </nav>
+  <a class="header__phone" href="tel:+380933753376">+380 93 375 3376</a>
+  <a class="pill pill--solid" href="#book">Записатися</a>
+  <button class="header__burger" type="button" aria-label="Меню" aria-controls="main-nav" aria-expanded="false"></button>
+</header>
+
+<!-- Перший екран: кадр на весь екран, авто фронтально в центрі, інтерфейс по кутах -->
+<section class="hero">
+  <div class="hero__layer" data-speed="0.35">
+    <img class="hero__img" src="hero-car.jpg" alt="Автомобіль у сервісній зоні">
+  </div>
+  <div class="hero__layer hero__fog" data-speed="0.15"></div>
+
+  <div class="hero__ui">
+    <div class="hero__tl">
+      <a class="pill pill--sm plate--glass" href="service.html">Гальма</a>
+      <a class="pill pill--sm plate--glass" href="suspension.html">Підвіска</a>
+      <a class="pill pill--sm plate--glass" href="diagnostics.html">Діагностика</a>
+    </div>
+
+    <div class="hero__tr">
+      <div class="plate plate--glass rating">
+        <div class="avatars"><span>ОК</span><span>ІМ</span><span>ТС</span><span>+</span></div>
+        <div>
+          <div class="rating__num">5.0</div>
+          <div class="rating__stars">★★★★★</div>
+        </div>
+        <div class="cap">1300+ відгуків</div>
+      </div>
+    </div>
+
+    <div class="hero__bl">
+      <h1 class="display hero__title">
+        <span>Ремонт,</span>
+        <span>який видно</span>
+        <span class="thin">на дорозі</span>
+      </h1>
+      <p class="lead" style="color:rgba(242,240,236,.75);margin-bottom:24px">Гальма, підвіска, діагностика й планове ТО. Показуємо, що зношене, називаємо ціну до початку роботи і віддаємо авто у домовлений час.</p>
+      <div class="hero__actions">
+        <a class="pill pill--solid" href="#book">Записатися на діагностику</a>
+        <a class="pill plate--glass" href="#services">Усі послуги</a>
+      </div>
+    </div>
+
+    <div class="hero__br">
+      <div class="plate plate--accent guarantee">
+        <div class="cap">Гарантія</div>
+        <strong>12 міс.</strong>
+        <div class="muted" style="font-size:13px">на роботи і встановлені деталі</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll"></div>
+</section>
+
+<!-- Другий екран наїжджає на перший -->
+<main class="main">
+
+  <!-- Капс у всю ширину -->
+  <div class="marquee-title">
+    <div class="display display--full">Авто<em>сервіс</em></div>
+  </div>
+
+  <!-- Послуги: асиметрія у дві колонки, липкий заголовок, сітка карток -->
+  <section class="section" id="services">
+    <div class="container split">
+      <div class="split__head">
+        <div class="cap reveal">Послуги</div>
+        <h2 class="h2 reveal">Що робимо<br>своїми руками</h2>
+        <p class="muted reveal">Кожна послуга починається з огляду. Ви бачите деталь, чуєте пояснення і тільки потім погоджуєте роботу.</p>
+      </div>
+      <div class="split__body">
+        <div class="grid grid--2">
+          <a class="card card--link reveal" href="service.html">
+            <div><div class="card__num">01</div><h3 class="h3 card__title">Гальмівна система</h3></div>
+            <p class="card__text">Диски, колодки, супорти, гальмівна рідина. Заміна з перевіркою на стенді після роботи.</p>
+            <div class="card__foot"><span class="cap">Докладно</span><span class="card__arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="card card--link reveal" href="suspension.html">
+            <div><div class="card__num">02</div><h3 class="h3 card__title">Підвіска і кермо</h3></div>
+            <p class="card__text">Амортизатори, сайлентблоки, важелі, наконечники. Після заміни — розвал-сходження.</p>
+            <div class="card__foot"><span class="cap">Докладно</span><span class="card__arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="card card--link reveal" href="diagnostics.html">
+            <div><div class="card__num">03</div><h3 class="h3 card__title">Діагностика</h3></div>
+            <p class="card__text">Комп'ютерна діагностика, огляд ходової на підйомнику, перевірка гальм і рідин. Письмовий висновок.</p>
+            <div class="card__foot"><span class="cap">Докладно</span><span class="card__arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="card card--link reveal" href="maintenance.html">
+            <div><div class="card__num">04</div><h3 class="h3 card__title">Планове ТО</h3></div>
+            <p class="card__text">Олива, фільтри, свічки, ремені за регламентом виробника. Нагадаємо про наступний візит.</p>
+            <div class="card__foot"><span class="cap">Докладно</span><span class="card__arrow" aria-hidden="true">→</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Кадр із паралаксом, заголовок поверх фото без плашки -->
+  <section class="frame frame--right">
+    <div class="frame__img-wrap"><img class="frame__img" src="workshop.jpg" alt="Сервісна зона з підйомниками"></div>
+    <div class="frame__content">
+      <div>
+        <div class="cap" style="color:rgba(242,240,236,.7);margin-bottom:16px">Цех</div>
+        <h2 class="h2">Чисто, світло і по інструменту на кожну операцію</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Про нас: принципи роботи -->
+  <section class="section" id="about">
+    <div class="container split">
+      <div class="split__head">
+        <div class="cap reveal">Про нас</div>
+        <h2 class="h2 reveal">Чому нам<br>довіряють авто</h2>
+        <p class="muted reveal">Ми зробили ставку на прозорість і акуратність. Нижче — принципи, за якими працює кожен майстер СТО24 Львів.</p>
+      </div>
+      <div class="split__body">
+        <div class="grid grid--2">
+          <article class="value reveal">
+            <div class="value__num">01</div>
+            <div class="value__title">Прозорі ціни</div>
+            <p class="value__text">Називаємо вартість роботи і запчастин до початку ремонту. Кошторис не змінюється без вашої згоди.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__num">02</div>
+            <div class="value__title">Культура чистоти</div>
+            <p class="value__text">Захисні накидки на сидіння і кермо, охайний спецодяг майстрів, чистий цех — авто повертаємо таким, яким прийняли.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__num">03</div>
+            <div class="value__title">Відповідаємо за роботу</div>
+            <p class="value__text">Якщо під час ремонту наш майстер щось пошкодить — виправимо і поставимо нову деталь власним коштом.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__num">04</div>
+            <div class="value__title">Зрозуміла мова</div>
+            <p class="value__text">Пояснюємо суть поломки без складних термінів і зверхності. Відповідаємо на всі питання до і після ремонту.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__num">05</div>
+            <div class="value__title">Вибір запчастин</div>
+            <p class="value__text">Пропонуємо 2–3 варіанти: від оригіналу до перевірених аналогів, що заощадять бюджет без втрати якості.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__num">06</div>
+            <div class="value__title">Гарантія на роботи</div>
+            <p class="value__text">Даємо 12 місяців гарантії на виконані роботи і встановлені деталі. Повторилось — приїжджайте, розберемось.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Світла зона: цифри як герой -->
+  <section class="section" data-theme-zone="light" id="numbers">
+    <div class="container">
+      <div class="split" style="margin-bottom:64px">
+        <div><div class="cap reveal">У цифрах</div><h2 class="h2 reveal">Замість слів</h2></div>
+        <p class="lead reveal">За роками роботи — тисячі полагоджених авто, власний цех і команда, якій довіряють повертатися знову.</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><div class="stat__num">12</div><div class="stat__cap">років працюємо</div></div>
+        <div class="stat reveal"><div class="stat__num">4000<small>+</small></div><div class="stat__cap">авто на рік</div></div>
+        <div class="stat reveal"><div class="stat__num">8</div><div class="stat__cap">постів у цеху</div></div>
+        <div class="stat reveal"><div class="stat__num">12<small>міс.</small></div><div class="stat__cap">гарантії на роботи</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Як працюємо: кроки -->
+  <section class="section" data-theme-zone="light" id="how" style="padding-top:0">
+    <div class="container">
+      <div class="cap reveal">Як працюємо</div>
+      <h2 class="h2 reveal" style="margin-bottom:48px">Чотири кроки<br>від дзвінка до ключів</h2>
+      <div class="steps">
+        <div class="step reveal"><div class="step__num">01</div><div class="step__title">Запис</div><div class="step__text">Телефонуєте та узгоджуєте зручний час візиту.</div></div>
+        <div class="step reveal"><div class="step__num">02</div><div class="step__title">Огляд і кошторис</div><div class="step__text">Піднімаємо авто, показуємо зношені деталі, називаємо ціну роботи і запчастин. Без згоди нічого не міняємо.</div></div>
+        <div class="step reveal"><div class="step__num">03</div><div class="step__title">Ремонт</div><div class="step__text">Працюємо в домовлений строк. Якщо з'являється щось нове — телефонуємо, а не робимо мовчки.</div></div>
+        <div class="step reveal"><div class="step__num">04</div><div class="step__title">Перевірка і видача</div><div class="step__text">Тест після ремонту, старі деталі повертаємо на вимогу. Віддаємо ключі й акт виконаних робіт.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Повернення у темну тему: кадр з деталлю -->
+  <section class="frame">
+    <div class="frame__img-wrap"><img class="frame__img" src="hands.jpg" alt="Механік затягує кріплення динамометричним ключем"></div>
+    <div class="frame__content">
+      <div>
+        <div class="cap" style="color:rgba(242,240,236,.7);margin-bottom:16px">Момент затягування</div>
+        <h2 class="h2">Кожен болт — за таблицею, а не «від руки»</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ціни -->
+  <section class="section" id="prices">
+    <div class="container split">
+      <div class="split__head">
+        <div class="cap reveal">Ціни</div>
+        <h2 class="h2 reveal">Орієнтир до огляду</h2>
+        <p class="muted reveal">Точну суму називаємо після діагностики. Кошторис не змінюється без вашої згоди.</p>
+      </div>
+      <div class="split__body">
+        <div class="price-list">
+          <div class="plate price reveal"><span class="price__name">Комп'ютерна діагностика</span><span class="price__val">від 400 грн</span><a class="pill pill--sm" href="#book">Записатися</a></div>
+          <div class="plate price reveal"><span class="price__name">Заміна гальмівних колодок / вісь</span><span class="price__val">від 500 грн</span><a class="pill pill--sm" href="#book">Записатися</a></div>
+          <div class="plate price reveal"><span class="price__name">Заміна гальмівних дисків / вісь</span><span class="price__val">від 700 грн</span><a class="pill pill--sm" href="#book">Записатися</a></div>
+          <div class="plate price reveal"><span class="price__name">Заміна оливи і фільтрів</span><span class="price__val">від 350 грн</span><a class="pill pill--sm" href="#book">Записатися</a></div>
+          <div class="plate price reveal"><span class="price__name">Розвал-сходження</span><span class="price__val">від 600 грн</span><a class="pill pill--sm" href="#book">Записатися</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Питання -->
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="container split">
+      <div class="split__head">
+        <div class="cap reveal">Питання</div>
+        <h2 class="h2 reveal">Що запитують до приїзду</h2>
+      </div>
+      <div class="split__body">
+        <div class="faq">
+          <div class="faq__item reveal"><button type="button" class="faq__q" aria-expanded="false" aria-controls="answer-1">Чи можна приїхати зі своїми запчастинами?</button><div class="faq__a" id="answer-1"><p>Так. Перед установкою перевіримо, чи підходить деталь. Гарантія в такому разі поширюється на роботу.</p></div></div>
+          <div class="faq__item reveal"><button type="button" class="faq__q" aria-expanded="false" aria-controls="answer-2">Скільки триває діагностика?</button><div class="faq__a" id="answer-2"><p>Зазвичай близько години. Якщо потрібно більше — скажемо одразу після першого огляду.</p></div></div>
+          <div class="faq__item reveal"><button type="button" class="faq__q" aria-expanded="false" aria-controls="answer-3">Чи можна чекати на місці?</button><div class="faq__a" id="answer-3"><p>Так, є зона очікування. Про деталі домовляємось при записі.</p></div></div>
+          <div class="faq__item reveal"><button type="button" class="faq__q" aria-expanded="false" aria-controls="answer-4">Як діє гарантія?</button><div class="faq__a" id="answer-4"><p>Гарантія на роботи — 12 міс. Якщо проблема повторилась — приїжджаєте, дивимось і виправляємо безкоштовно.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Відгуки -->
+  <section class="section" id="reviews" style="padding-top:0">
+    <div class="container">
+      <div class="split" style="margin-bottom:48px">
+        <div><div class="cap reveal">Відгуки</div><h2 class="h2 reveal">Що кажуть<br>наші клієнти</h2></div>
+        <p class="lead reveal">Оцінка 5.0 і понад 1300 відгуків. Кілька історій — нижче.</p>
+      </div>
+      <div class="reviews">
+        <div class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">Приїхав на діагностику перед поїздкою. Знайшли пару моментів по підвісці, все показали й пояснили без «розводів». Швидко замовили деталі й усунули. Рекомендую.</p>
+          <div class="review__name">Микола</div>
+        </div>
+        <div class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">Міняв гальмівні диски й колодки. Назвали ціну одразу, зробили в домовлений час. Після роботи — тест-виїзд і пояснення, як обкатати колодки. Все чесно.</p>
+          <div class="review__name">Олександр</div>
+        </div>
+        <div class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">Толкові майстри. Пояснюють простими словами, не нав'язують зайвого. Є запис і оплата карткою. Роблять на совість — тепер обслуговуюсь лише тут.</p>
+          <div class="review__name">Альона</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Запис -->
+  <section class="section" id="book">
+    <div class="container cta">
+      <div>
+        <div class="cap reveal">Запис</div>
+        <h2 class="h2 reveal">Запишіться телефоном</h2>
+        <p class="muted reveal" style="margin-top:16px">Або телефонуйте: <a href="tel:+380933753376">+380 93 375 3376</a></p>
+      </div>
+      <div class="reveal"><a class="pill pill--solid" href="tel:+380933753376">Зателефонувати: +380 93 375 3376</a><p class="cta__note" style="margin-top:16px">Пн–Нд 10:00–21:00. Узгодимо час візиту телефоном.</p></div>
+    </div>
+  </section>
+
+  <!-- Підвал -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <a class="header__logo" href="index.html">СТО24 Львів</a>
+          <p class="muted" style="margin-top:16px;max-width:30ch">Автосервіс СТО24 Львів у Львові: гальма, підвіска, діагностика, ТО.</p>
+        </div>
+        <div class="footer__col">
+          <div class="cap" style="margin-bottom:12px">Контакти</div>
+          <ul>
+            <li><a href="tel:+380933753376">+380 93 375 3376</a></li>
+            <li><a href="mailto:info@obert.com.ua">info@obert.com.ua</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Львів+Личаківська+150" target="_blank" rel="noopener">вул. Личаківська, 150, Львів — на карті ↗</a></li>
+            <li>Пн–Нд 10:00–21:00</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="cap" style="margin-bottom:12px">Послуги</div>
+          <ul>
+            <li><a href="service.html">Гальмівна система</a></li>
+            <li><a href="suspension.html">Підвіска і кермо</a></li>
+            <li><a href="diagnostics.html">Діагностика</a></li>
+            <li><a href="maintenance.html">Планове ТО</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="cap" style="margin-bottom:12px">Соцмережі</div>
+          <ul>
+            <li><a href="https://www.instagram.com/sto24_lviv/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 СТО24 Львів / Усі права захищені</span>
+        <span>Автосервіс СТО24 Львів, м. Львів</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
